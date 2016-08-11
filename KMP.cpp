@@ -27,7 +27,7 @@ inline void makeNextTable(const string&T, vector<int>&next)
 			cnd++;
 			pos++;
 		}
-		// 第二种情况，子串匹配失败，但可以匹配到更小串，比如“aabaaa”
+		// 第二种情况，子串匹配失败，但可以匹配到更小串，比如“aabaaa”中T[6]=2而不是1
 		else if (cnd > 0)
 		{
 			cnd = next[cnd];
